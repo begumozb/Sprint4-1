@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nature Friendly Club</title>
+    
+        <!--CSS FILES-->
+        <!--custom css-->
+        <link rel="stylesheet" href="adoptionForm.css">
+        <!--jquery UI-->
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+        <!--JS FILES-->
+        <!--jquery-->
+        <script src="js/jquery.js"></script>
+        <!--jquery UI-->
+        <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+        <!--Custom js File-->
+        <script src="js/adoptionForm.js"></script>
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+<body>
+<main>
+<form id="survey-form">
+
+    <p id="description"><em>Thank you for wishing to offer a rescue dog a home! Please could you complete the form below and submit it to us. </em></p>
+    </div>
+                
+    <div class="row">
+    
+        <div class="form-container">
+            <!-- name -->
+            <div id="first-last-name">
+                <label class="main-label" id="name-label">First Name: </label>
+                <input type="text" id="name" placeholder="John" required><br>
+
+                <label class="main-label">Last Name: </label>
+                <input type="text" id="lastName" placeholder="Smith" required><br>
+            </div>
+            <label class="main-label">Today's Date:</label> <input class = "input" type ="text" id = "day"><br>
+            <!-- email / phone / age -->
+            <div id="email-phone">
+                <label class="main-label" id="phone-label" for="phone">Phone: </label>
+                <input type="tel" id="phone" placeholder="e.g. +44 7675 403 665"><br>
+
+                <label class="main-label" id="email-label" for="email">Email: </label>
+                <input type="email" id="email" placeholder="e.g. youremail@example.com" required size="35"><br>
+            </div>
+            <!-- address  -->
+            <div id="address">
+                <label class="main-label" for="address1">Address: </label>
+                <input type="text" id="address1" size="30" placeholder="Enter your address here"><br>
+
+                <label class="main-label" for="town">Town: </label>
+                <input type="text" id="town" size="15" placeholder="Your town"><br>
+
+                <label class="main-label" for="postcode">Postcode: </label>
+                <input type="text" id="postcode" size="10" placeholder="Postcode"><br>
+            </div>
+            <!-- allergies -->
+            <div id="allergies">
+                <ul><label class="main-label" for="allergies">Is anyone in your household allergic to pets?</label></ul>
+                <li><input type="radio" id="yes" name="allergy" value="1" required>
+                    <label for="yes">Yes</label></li>
+                <li><input type="radio" id="no" name="allergy" value="2" required>
+                    <label for="no">No</label></li>
+                <li><input type="radio" id="sometimes" name="allergy" value="3" required>
+                    <label for="sometimes">Sometimes</label></li>
+            </div>
+            <!-- pets in household -->
+            <!--<div id="pets-household">
+                <ul><label class="main-label" id="number-label">How many pets are already in your household?</label></ul>
+                <li><input type="number" id="number" min="1" max="10" placeholder="0"></li>
+            </div>-->
+        </div>
+    </div>
+
+    <!-- submit button -->
+    <div id="button">
+        <button type="submit" id="submit">Submit</button>
+    </div>
+
+
+</form>
+</main>
+</body>
+</html>
